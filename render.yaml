@@ -1,0 +1,10 @@
+services:
+ - type: web
+ name: telegram-bot
+ env: python
+ buildCommand: pip install -r requirements.txt
+ startCommand: python bot.py
+ plan: free
+ envVars:
+ - key: 8857631509:AAF-C2iFU_cPTWYwdgYDdeEoOpUGPOX19MA
+ sync: false
